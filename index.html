@@ -56,7 +56,10 @@
     <main class="main">
       <!--==================== HOME ====================-->
       <section class="home" id="home">
-        <img src="img/home.jpg" alt="" class="home__img" />
+        <picture>
+          <source media="(max-width: 400px)" srcset="img/gallery10.jpg" />
+          <img src="img/home3.jpg" alt="" class="home__img" />
+        </picture>
 
         <div class="home__container container grid">
           <div class="home__data">
@@ -271,6 +274,31 @@
             <div class="about__img-overlay">
               <img src="assets/img/about2.jpg" alt="" class="about__img-two" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SUBSCRIBE ====================-->
+      <section class="subscribe section">
+        <div class="subscribe__bg">
+          <div class="subscribe__container container">
+            <h2 class="section__title subscribe__title">
+              Subscribe Our <br />
+              Newsletter
+            </h2>
+            <p class="subscribe__description">
+              Subscribe to our newsletter and get a special 30% discount.
+            </p>
+
+            <form action="" class="subscribe__form">
+              <input
+                type="text"
+                placeholder="Enter email"
+                class="subscribe__input"
+              />
+
+              <button class="button">Subscribe</button>
+            </form>
           </div>
         </div>
       </section>
